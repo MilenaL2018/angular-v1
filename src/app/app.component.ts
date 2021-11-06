@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-v1';
+  showFiller = false;
+  faLinkedIn = faLinkedin;
 }
