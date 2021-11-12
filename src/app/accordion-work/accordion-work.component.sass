@@ -2,16 +2,16 @@ $white: rgba(254,255,250,1)
 $grey: rgba(220,231,235,1)
 $red: rgba(255,104,115,1)
 $black: rgba(48,69,92,0.8)
+$small: 750px
+$medium: 900px
 
 .mat-form-field + .mat-form-field 
   margin-left: 8px
 
 h2
-  text-size-adjust: auto
-  font-size: 26px
+  font-size: 1.5rem
   line-height: 34px
   font-weight: 300
-  letter-spacing: 1px
   display: block
   background-color: $white
   margin: 0
@@ -25,8 +25,7 @@ h2
 
 p
   color: $black
-  font-size: 20px
-  line-height: 26px
+  font-size: 1rem
   letter-spacing: 1px
   position: relative
   white-space: nowrap
@@ -35,3 +34,11 @@ p
   opacity: 1
   margin-top: 14px
   z-index: 2
+
+@media screen and (max-width: $small) 
+  p
+    font-size: 0.9rem
+  #cdk-accordion-child-0
+    padding: 0 0 16px
+  .mat-expansion-panel-body, .ng-tns-c100-0
+    padding: 0 0 16px
